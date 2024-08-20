@@ -1,0 +1,240 @@
+/* Resetting default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial', sans-serif;
+}
+
+/* Styling for the main section */
+section {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Styling for the header within the main section */
+section header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+/* Styling for the navigation list within the header */
+section header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for list items within the navigation list */
+section header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+/* Styling for anchor links within list items */
+section header ul li a {
+    color: #111;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Styling for buttons within list items */
+section header ul li button {
+    background: #1a73e8;
+    border: none;
+    outline: none;
+    padding: 10px 24px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Styling for the main content */
+section .main {
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -15%;
+}
+
+/* Styling for the search box within the main content */
+section .main .searchBox {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Styling for the search input field within the search box */
+section .main .searchBox .search {
+    width: 100%;
+    padding: 15px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 30px;
+    border: 1px solid #dedede;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Styling for icons within the search box */
+section .main .searchBox .icons {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 11px 20px;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+
+/* Styling for mic and lens icons within the search box */
+section .main .searchBox .icons .miclens {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Styling for buttons within the main content */
+section .main .buttons {
+    margin-top: 20px;
+}
+
+/* Styling for buttons within the main content */
+section .main .buttons button {
+    margin: 0 5px;
+    padding: 12px 20px;
+    color: #3c4043;
+    background: #f8f9fa;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+/* Hover effect for buttons within the main content */
+section .main .buttons button:hover {
+    border: 1px solid #dedede;
+}
+
+/* Styling for language options within the main content */
+section .main .languages {
+    display: flex;
+    margin-top: 30px;
+}
+
+/* Styling for list items within the language options */
+section .main .languages li {
+    list-style: none;
+    margin: 0 5px;
+    font-size: 13px;
+}
+
+/* Styling for anchor links within language options */
+section .main .languages li a {
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+/* Hover effect for anchor links within language options */
+section .main .languages li a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the footer section */
+section .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f2f2f2;
+}
+
+/* Styling for rows within the footer section */
+section .footer .row {
+    padding: 15px 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    color: #5f6368;
+}
+
+/* Styling for the second row within the footer section */
+section .footer .row.row2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling for unordered lists within the second row of the footer */
+section .footer .row.row2 ul {
+    display: flex;
+}
+
+/* Styling for list items within unordered lists in the second row of the footer */
+section .footer .row.row2 ul li {
+    list-style: none;
+}
+
+/* Styling for anchor links within list items in the second row of the footer */
+section .footer .row.row2 ul li a {
+    text-decoration: none;
+    font-size: 14px; 
+    color: #5f6368;
+    margin-right: 25px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Adjusting styles for smaller screens within the main content */
+    section .main {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        margin-top: -45%;
+    }
+
+    /* Adapting styles for language options on smaller screens */
+    section .main .languages {
+        flex-wrap: wrap;
+    }
+
+    /* Adapting styles for images on smaller screens */
+    section .main img {
+        max-width: 75%; 
+    }
+
+    /* Adjusting styles for the footer's second row on smaller screens */
+    section .footer .row.row2 {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    /* Adapting styles for unordered lists in the second row of the footer on smaller screens */
+    section .footer .row.row2 ul {
+        flex-wrap: wrap;
+    }
+
+    /* Adjusting styles for list items in unordered lists in the second row of the footer on smaller screens */
+    section .footer .row.row2 ul li {
+        margin-bottom: 10px;
+        text-align: center; 
+    }
+
+    /* Adjusting styles for anchor links in list items in unordered lists in the second row of the footer on smaller screens */
+    section .footer .row.row2 ul li a {
+        font-size: 13px; 
+        margin-right: 15px; 
+    }
+}
